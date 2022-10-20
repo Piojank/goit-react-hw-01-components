@@ -1,8 +1,13 @@
-import Profile from "components/profile/Profile";
-import Statistics from "components/statisctic/Statistics";
+import "./App.css";
+import Profile from "./components/profile/Profile";
+import Statistics from "./components/statistics/Statistics";
+import FriendList from "./components/friendslist/FriendListItem";
+import TransactionHistory from "./components/transaction/TransactionHistory";
 
 import user from "./data/user.json";
-import datastats from "./data/datastats.json";
+import datastats from "./data/datastats.json"
+import friends from "./data/friends.json";
+import items from "./data/transactions.json";
 
 function App() {
     return (
@@ -18,6 +23,8 @@ function App() {
                     followers={user.stats.followers}
                 />
                 <Statistics title="Upload stats" statistics={datastats} />
+                <FriendList friends={friends} />
+                <TransactionHistory items={items} />
             </header>
         </div>
     );
