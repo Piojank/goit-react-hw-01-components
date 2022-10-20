@@ -1,11 +1,11 @@
 import "./App.css";
 import Profile from "./components/profile/Profile";
-import Statistics from "./components/statistics/Statistics";
-import FriendList from "./components/friendslist/FriendList";
+import Statistics from "./components/stats/Statistics";
+import FriendList from "./components/friends/FriendList";
 import TransactionHistory from "./components/transaction/TransactionHistory";
 
 import user from "./data/user.json";
-import datastats from "./data/datastats.json";
+import stats from "./data/stats.json";
 import friends from "./data/friends.json";
 import items from "./data/transactions.json";
 
@@ -22,7 +22,7 @@ function App() {
           likes={user.stats.likes}
           followers={user.stats.followers}
         />
-        <Statistics title="Upload stats" statistics={datastats} />
+        <Statistics title="Upload stats" statistics={stats} />
         <FriendList friends={friends} />
         <TransactionHistory items={items} />
       </header>

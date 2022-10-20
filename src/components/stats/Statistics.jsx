@@ -1,4 +1,4 @@
-import Item from "./Item";
+import Item from "./item.jsx";
 import styles from "./Statistics.module.css";
 import PropTypes from "prop-types";
 
