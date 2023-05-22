@@ -1,8 +1,9 @@
 import "./App.css";
 import Profile from "./components/profile/Profile";
+import Statistics from "./components/stats/Statistics";
 
 import user from "./data/user.json";
-// import stats from "./data/stats.json";
+import stats from "./data/stats.json";
 // import friends from "./data/friends.json";
 // import items from "./data/transactions.json";
 
@@ -19,6 +20,7 @@ const App = () => {
           likes={user.stats.likes}
           followers={user.stats.followers}
         />
+        <Statistics title="Upload stats" statistics={stats} />
       </header>
     </div>
   );
