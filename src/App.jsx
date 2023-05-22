@@ -1,10 +1,11 @@
 import "./App.css";
 import Profile from "./components/profile/Profile";
 import Statistics from "./components/stats/Statistics";
+import FriendList from "./components/friends/FriendList";
 
 import user from "./data/user.json";
 import stats from "./data/stats.json";
-// import friends from "./data/friends.json";
+import friends from "./data/friends.json";
 // import items from "./data/transactions.json";
 
 const App = () => {
@@ -21,6 +22,7 @@ const App = () => {
           followers={user.stats.followers}
         />
         <Statistics title="Upload stats" statistics={stats} />
+        <FriendList friends={friends} />
       </header>
     </div>
   );
