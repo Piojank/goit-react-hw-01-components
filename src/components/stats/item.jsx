@@ -6,6 +6,7 @@ const getRandomHexColor = () => {
         .padStart(6, '0')}`;
 };
 
+
 const Item = ({ id, label, percentage }) => {
     return (
         <li 
