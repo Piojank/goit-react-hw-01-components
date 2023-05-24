@@ -1,8 +1,8 @@
 import styles from "./TransactionHistory.module.css";
-import TransactionHistoryItem from "./TransactionHistoryItem";
-import propTypes from "prop-types";
+import { TransactionHistoryItem}  from "./TransactionHistoryItem";
+import PropTypes from "prop-types";
 
-const TransactionHistory = ({ items }) => {
+export const TransactionHistory = ({ items }) => {
     return (
         <table className={styles.transactionHistory}>
             <thead>
@@ -28,7 +28,5 @@ const TransactionHistory = ({ items }) => {
 }
 
 TransactionHistory.propTypes = {
-    items: propTypes.array,
+    items: PropTypes.array,
 };
-
-export default TransactionHistory;

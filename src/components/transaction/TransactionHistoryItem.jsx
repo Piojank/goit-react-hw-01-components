@@ -1,4 +1,4 @@
-const TransactionHistoryItem = ({ type, amount, currency }) => {
+export const TransactionHistoryItem = ({ type, amount, currency }) => {
     return (
         <tr>
             <th>{type}</th>
@@ -7,5 +7,3 @@ const TransactionHistoryItem = ({ type, amount, currency }) => {
         </tr>
     );
 }
-
-export default TransactionHistoryItem;

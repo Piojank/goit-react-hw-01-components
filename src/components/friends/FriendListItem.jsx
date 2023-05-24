@@ -1,6 +1,6 @@
 import styles from "./FriendList.module.css";
 
-const FriendListItem = ({ isOnline, avatar, name }) => {
+export const FriendListItem = ({ isOnline, avatar, name }) => {
     return (
         <li class={styles.item}>
 
@@ -15,5 +15,3 @@ const FriendListItem = ({ isOnline, avatar, name }) => {
         </li>
     );
 };
-
-export default FriendListItem;

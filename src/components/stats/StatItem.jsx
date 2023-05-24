@@ -1,13 +1,7 @@
 import styles from "./Statistics.module.css";
+import { getRandomHexColor } from "utils/getRandomHexColor";
 
-const getRandomHexColor = () => {
-    return `#${Math.floor(Math.random() * 16777215)
-        .toString(16)
-        .padStart(6, '0')}`;
-};
-
-
-const Item = ({ id, label, percentage }) => {
+export const StatItem = ({ id, label, percentage }) => {
     return (
         <li 
             className={styles.item}
@@ -19,6 +13,4 @@ const Item = ({ id, label, percentage }) => {
             <span className={styles.percentage}>{percentage}%</span>
         </li>
     );
-}
-
-export default Item;
+};
