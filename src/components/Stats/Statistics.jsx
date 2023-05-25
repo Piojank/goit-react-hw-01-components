@@ -6,12 +6,18 @@ export const Statistics = ({ statistics, title }) => {
     return (
         <section className={styles.statistics}>
             <h2 className={styles.title}>{title}</h2>
-            <ul className={styles.statList}>
-        {statistics.length > 0 &&
-            statistics.map(({ id, label, percentage }) => (
-                <StatItem key={id} id={id} label={label} percentage={percentage} />
-            ))}
-            </ul>
+                <ul className={styles.list}>
+                    
+                {statistics.length > 0 &&
+                    statistics.map((stat) => (
+                        <StatItem 
+                            key={stat.id} 
+                            id={stat.id} 
+                            label={stat.label} 
+                            percentage={stat.percentage} 
+                        />
+                    ))}
+                </ul>
         </section>
     );
 };

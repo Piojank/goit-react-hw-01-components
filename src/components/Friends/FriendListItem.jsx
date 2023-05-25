@@ -4,10 +4,10 @@ export const FriendListItem = ({ isOnline, avatar, name }) => {
     return (
         <li class={styles.item}>
 
-            {isOnline === true ? (
-                <span className={styles.status}>{isOnline}</span>
+            {isOnline ? (
+                <span className={styles.status__green}>{isOnline}</span>
             ) : (
-                <span className={styles.statusRed}>{isOnline} </span>
+                <span className={styles.status__red}>{isOnline} </span>
             )}
 
             <img className={styles.avatar} src={avatar} alt="User avatar" width="48" />

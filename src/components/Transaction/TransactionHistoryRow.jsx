@@ -1,4 +1,4 @@
-export const TransactionHistoryItem = ({ type, amount, currency }) => {
+export const TransactionHistoryRow = ({ type, amount, currency }) => {
     return (
         <tr>
             <th>{type}</th>

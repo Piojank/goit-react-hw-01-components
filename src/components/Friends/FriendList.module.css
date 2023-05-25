@@ -1,4 +1,4 @@
-.friendList {
+.list {
     list-style: none;
     width: 300px;
     color: black;
@@ -15,7 +15,7 @@
     box-shadow: rgb(0, 0, 0) 2px 3px 7px 0px;
 }
 
-.status {
+.status__green {
     width: 10px;
     height: 10px;
     background-color: green;
@@ -24,7 +24,7 @@
     margin-left: 10px;
 }
 
-.statusRed {
+.status__red {
     width: 10px;
     height: 10px;
     background-color: red;

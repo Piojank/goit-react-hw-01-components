@@ -1,5 +1,6 @@
 import styles from "./Statistics.module.css";
 import { getRandomHexColor } from "utils/getRandomHexColor";
+import PropTypes from 'prop-types';
 
 export const StatItem = ({ id, label, percentage }) => {
     return (
@@ -13,4 +14,10 @@ export const StatItem = ({ id, label, percentage }) => {
             <span className={styles.percentage}>{percentage}%</span>
         </li>
     );
+};
+
+StatItem.propTypes = {
+    id: PropTypes.string.isRequired,
+    label: PropTypes.string.isRequired,
+    percentage: PropTypes.number.isRequired,
 };

@@ -4,9 +4,9 @@ import PropTypes from "prop-types";
 
 export const FriendList = ({ friends }) => {
     return (
-        <ul className={styles.friendList}>
+        <ul className={styles.list}>
 
-        {friends.length > 0 &&
+        {friends.length &&
             friends.map(({ avatar, name, isOnline, id }) => (
             <FriendListItem
                 key={id}
