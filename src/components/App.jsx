@@ -1,8 +1,7 @@
-import "../index.css";
-import { Profile }  from "./Profile/Profile";
-import { Statistics } from "./Stats/Statistics";
-import { FriendList } from "./Friends/FriendList";
-import { TransactionHistory } from "./Transaction/TransactionHistory";
+import { Profile }  from "./rofile/Profile";
+import { Statistics } from "./tats/Statistics";
+import { FriendList } from "./riends/FriendList";
+import { TransactionHistory } from "./ransaction/TransactionHistory";
 
 import user from "../data/user.json";
 import stats from "../data/stats.json";
